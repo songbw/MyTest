@@ -5,31 +5,129 @@
 
     <ion-buttons end>
       <button ion-button icon-only (click)="addItem()">
-        <ion-icon name="add"></ion-icon>
+        <ion-icon name="search"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content>
+<ion-content isScrolling="false">
+  <ion-row no-padding>
+    <ion-col col-3 no-padding text-center>
+      <!--<ion-scroll scrollY="true" style="width: 100%;height: 100%" maxZoom="3" zoom="true">-->
+        <ion-list no-margin no-padding text-center>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+          <ion-item no-padding no-margin text-center>
+            <p>test</p>
+          </ion-item>
+        </ion-list>
+      <!--</ion-scroll>-->
+    </ion-col>
+    <ion-col col-9>
 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of currentItems">
-      <button ion-item (click)="openItem(item)">
-        <ion-avatar item-start>
-          <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-      </button>
+      <ion-list>
+          <ion-list-header>
+            test
+          </ion-list-header>
+          <ion-row>
+            <ion-col col-4>
+              <button ion-item no-lines detail-none no-margin>
+                <ion-thumbnail no-padding no-margin>
+                  <ion-img no-margin no-padding src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f1eb4365c94d7ee42911cae41ba03ff9.jpg"></ion-img>
+                </ion-thumbnail>
+              </button>
+              <p nowrap no-padding no-margin>生活配送</p>
+            </ion-col>
+            <ion-col col-4>
+              <button ion-item no-lines detail-none no-margin center>
+                <ion-thumbnail>
+                  <ion-img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/8dac4de925e02bf001d1136e256b44ed.jpg"></ion-img>
+                </ion-thumbnail>
+              </button>
+              <p nowrap no-padding no-margin>生活配送</p>
+            </ion-col>
+            <ion-col col-4 center>
+              <button ion-item no-lines detail-none no-margin center>
+                <ion-thumbnail no-margin no-padding>
+                  <ion-img no-margin no-padding src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/5fdb29387f37cdbb32a01912febf0ce8.jpg"></ion-img>
+                </ion-thumbnail>
+              </button>
+              <p nowrap no-padding no-margin>空气净化治理</p>
+            </ion-col>
+          </ion-row>
 
-      <ion-item-options>
-        <button ion-button color="danger" (click)="deleteItem(item)">
-          {{ 'DELETE_BUTTON' | translate }}
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+        <ion-list-header>
+          test
+        </ion-list-header>
+        <ion-row>
+          <ion-col col-4>
+            <button ion-item no-lines detail-none no-margin>
+              <ion-thumbnail>
+                <ion-img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/3f7c25230903129c59ab234b57c3e05f.jpg"></ion-img>
+              </ion-thumbnail>
+              <h3>生活配送</h3>
+            </button>
+          </ion-col>
+          <ion-col col-4>
+            <ion-item no-lines text-center>
+              <ion-thumbnail>
+                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/08f008c0bbf00a170643223eb5b7d3f5.jpg">
+              </ion-thumbnail>
+              <h2>test</h2>
+            </ion-item>
+          </ion-col>
+          <ion-col col-4>
+            <ion-item no-lines text-center>
+              <ion-thumbnail>
+                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/9d20f302d8342922c1f3886010845dce.jpg">
+              </ion-thumbnail>
+              <h2>test</h2>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-4>
+            <button ion-item no-lines detail-none no-margin>
+              <ion-thumbnail>
+                <ion-img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/3f7c25230903129c59ab234b57c3e05f.jpg"></ion-img>
+              </ion-thumbnail>
+              <h3>生活配送</h3>
+            </button>
+          </ion-col>
+          <ion-col col-4>
+            <ion-item no-lines text-center>
+              <ion-thumbnail>
+                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/08f008c0bbf00a170643223eb5b7d3f5.jpg">
+              </ion-thumbnail>
+              <h2>家庭清洁套餐</h2>
+            </ion-item>
+          </ion-col>
+
+        </ion-row>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
 </ion-content>

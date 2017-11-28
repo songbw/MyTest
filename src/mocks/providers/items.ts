@@ -12,7 +12,6 @@ export class Items {
     "about": "Burt is a Bear.",
   };
 
-
   constructor() {
     let items = [
       {

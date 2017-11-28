@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { Config, Nav, Platform } from 'ionic-angular';
 
-import { FirstRunPage } from '../pages/pages';
+import {FirstRunPage, MainPage} from '../pages/pages';
 import { Settings } from '../providers/providers';
 
 @Component({
@@ -27,7 +27,8 @@ import { Settings } from '../providers/providers';
   <ion-nav #content [root]="rootPage"></ion-nav>`
 })
 export class MyApp {
-  rootPage = FirstRunPage;
+  // rootPage = FirstRunPage;
+  rootPage = MainPage;
 
   @ViewChild(Nav) nav: Nav;
 
@@ -42,6 +43,10 @@ export class MyApp {
     { title: 'Master Detail', component: 'ListMasterPage' },
     { title: 'Menu', component: 'MenuPage' },
     { title: 'Settings', component: 'SettingsPage' },
+    { title: 'Zhuye', component: 'ZhuyePage' },
+    { title: 'TabDiscover', component: 'TabDiscoverPage' },
+    { title: 'GoodLists', component: 'GoodListsPage' },
+    { title: 'GoodDetail', component: 'GoodDetailPage' },
     { title: 'Search', component: 'SearchPage' }
   ]
 

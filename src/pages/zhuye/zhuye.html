@@ -1,0 +1,161 @@
+<!--
+  Generated template for the ZhuyePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'ZHUYE_TITLE' | translate }}</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="openCity()">
+        <ion-icon name="pin"></ion-icon>{{defaultCity.name || city.name }}
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSearch()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row no-padding>
+    <ion-col no-padding>
+      <ion-slides pager autoplay="600" speed="800" loop="true" autoplayDisableOnInteration="true">
+        <ion-slide>
+          <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f5c5004e7f9095c13526eba8b3c95df0.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/dac8b0aa9e9d751a6687b6315b6a1701.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/13bb62ffe6e8cf62b0a8c7a874bccceb.jpg"/>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+  <ion-row  no-padding>
+    <ion-col>
+      <ion-slides pager>
+        <ion-slide>
+          <ion-row>
+            <ion-col onclick="">
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/e6a525979489056f9a06e65c2f18d00a.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/ad982b4d23b3f23b181038fa862e8916.jpg" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/98a1883095415da6b7c215bf0d257b59.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/6ae6873c94462d366038571b4eaddff8.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/ca81e5ba1cc3aad1937ca3eb44774d24.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/a11b7302948c92ad29e166756b82182c.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+          </ion-row>
+        </ion-slide>
+        <ion-slide>
+          <ion-row>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+            <ion-col>
+              <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f9a5c5ee82f81e4e33e52227047cbf62.png" class="type-img-avatar"/>
+              <h2 class="type-h2">test</h2>
+            </ion-col>
+          </ion-row>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="col-tiao"></ion-col>
+  </ion-row>
+  <ion-list>
+    <ion-list-header>
+      <h2 class="type-h2" text-center>服务推荐</h2>
+    </ion-list-header>
+    <ion-row no-padding>
+      <ion-col  no-padding>
+        <img src="assets/imgs/1.jpg" />
+      </ion-col>
+      <ion-col  no-padding>
+        <img src="assets/imgs/1..jpg" />
+        <img src="assets/imgs/1...jpg" />
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col  no-padding>
+        <img src="assets/imgs/2..jpg">
+      </ion-col>
+      <ion-col  no-padding>
+        <img src="assets/imgs/2....jpg">
+        <img src="assets/imgs/2...jpg">
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col  no-padding>
+        <img src="assets/imgs/3.jpg">
+      </ion-col>
+      <ion-col  no-padding>
+        <img src="assets/imgs/3..jpg">
+        <img src="assets/imgs/3...jpg">
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+</ion-content>
