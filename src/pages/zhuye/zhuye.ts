@@ -55,4 +55,8 @@ export class ZhuyePage {
     this.navCtrl.push('SearchPage');
   }
 
+  openTestSlides() {
+    this.navCtrl.push('TestSlidesPage');
+  }
+
 }

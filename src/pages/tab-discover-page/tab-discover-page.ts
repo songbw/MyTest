@@ -28,62 +28,67 @@ export class TabDiscoverPage {
     if (typeNumber == 102) {
       this.categoryDetailData = [
         {
-          name: "毛呢大衣",
-          src: "assets/img/nz1.jpg",
+          name: "家电保洁",
+          src: "http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f1eb4365c94d7ee42911cae41ba03ff9.jpg",
           typeNumber: '10001'
         },
         {
-          name: "羽绒服",
+          name: "新居开荒",
           src: "assets/img/nz2.jpg",
           typeNumber: '10002'
         },
         {
-          name: "针织衫",
+          name: "房屋日常",
           src: "assets/img/nz3.jpg",
           typeNumber: '10003'
         },
         {
-          name: "连衣裙",
+          name: "保洁类",
           src: "assets/img/nz4.jpg",
           typeNumber: '10004'
         },
         {
-          name: "棉服",
+          name: "上门美院",
           src: "assets/img/nz5.jpg",
           typeNumber: '10005'
         },
         {
-          name: "长袖T恤",
+          name: "汽车服务",
           src: "assets/img/nz6.jpg",
           typeNumber: '10006'
         },
         {
-          name: "羊绒衫",
+          name: "保健按摩",
           src: "assets/img/nz7.jpg",
           typeNumber: '10007'
         },
         {
-          name: "衬衫",
+          name: "女性护理",
           src: "assets/img/nz8.jpg",
           typeNumber: '10008'
         },
         {
-          name: "风衣",
+          name: "产妇护理",
           src: "assets/img/nz9.jpg",
           typeNumber: '10009'
         },
         {
-          name: "皮衣",
+          name: "汽车保养",
           src: "assets/img/nz10.jpg",
           typeNumber: '10010'
         },
         {
-          name: "休闲裤",
+          name: "道路救援",
           src: "assets/img/nz11.jpg",
           typeNumber: '10011'
         },
         {
-          name: "牛仔裤",
+          name: "水电暖维修",
+          src: "assets/img/nz12.jpg",
+          typeNumber: '10012'
+        },
+        {
+          name: "生活配送",
           src: "assets/img/nz12.jpg",
           typeNumber: '10012'
         }
@@ -143,42 +148,42 @@ export class TabDiscoverPage {
   private getCategoryData() {
     return [
       {
-        name: "潮流女装",
+        name: "上门保洁",
         typeNumber: '102'
         ,isSelect:true
       },
       {
-        name: "品牌男装",
+        name: "特价专栏",
         typeNumber: '103'
         ,isSelect:false
       },
       {
-        name: "热门推荐",
+        name: "监控治理",
         typeNumber: '101'
         ,isSelect:false
       },
       {
-        name: "内衣配饰",
+        name: "上门美院",
         typeNumber: '104'
         ,isSelect:false
       },
       {
-        name: "家用电器",
+        name: "母婴护理",
         typeNumber: '105'
         ,isSelect:false
       },
       {
-        name: "电脑办公",
+        name: "汽车服务",
         typeNumber: '106'
         ,isSelect:false
       },
       {
-        name: "手机数码",
+        name: "上门维修",
         typeNumber: '107'
         ,isSelect:false
       },
       {
-        name: "母婴频道",
+        name: "上门配送",
         typeNumber: '108'
         ,isSelect:false
       },

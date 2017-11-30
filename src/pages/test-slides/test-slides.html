@@ -1,0 +1,35 @@
+<!--
+  Generated template for the TestSlidesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>test-slides</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="bg">
+    <ion-grid class="pad-0 pad-lr-8 pad-b-8">
+      <ion-row>
+
+        <ion-col [ngClass]="{'active-tab':index==0}" class="tabs-col " (click)="goToSlide(0)">人气商家</ion-col>
+        <ion-col [ngClass]="{'active-tab':index==1||index==2}" class="tabs-col" (click)="goToSlide(1)">推荐商家</ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="Popularity">
+      <ion-slides class="bg-fff" (ionSlideDidChange)="slideChanged()">
+        <ion-slide style="background:red">
+          <h1>Slide 1</h1>
+        </ion-slide >
+        <ion-slide style="background:yellow">
+          <h1>Slide 2</h1>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+</ion-content>

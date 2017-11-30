@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, ModalController, NavController } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {IonicPage, ModalController, NavController, Slides} from 'ionic-angular';
 
 import { Item } from '../../models/item';
 import { Items } from '../../providers/providers';
@@ -11,6 +11,10 @@ import { Items } from '../../providers/providers';
 })
 export class ListMasterPage {
   currentItems: Item[];
+
+  @ViewChild(Slides) slides: Slides;
+
+  index:number = 0;
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
     this.currentItems = this.items.query();
@@ -50,5 +54,34 @@ export class ListMasterPage {
     this.navCtrl.push('ItemDetailPage', {
       item: item
     });
+  }
+
+  //添加active
+  goToSlide(index) {
+
+    this.slides.slideTo(index, 500);
+
+    this.addActive(index);
+
+  }
+
+// 滑动切换
+  slideChanged() {
+
+    let currentIndex = this.slides.getActiveIndex();
+
+    console.log('Current index is', currentIndex);
+
+    this.addActive(currentIndex);
+
+  }
+
+// 改变tab 颜色
+  addActive(index){
+
+    this.index = index;
+
+    console.log(index)
+
   }
 }

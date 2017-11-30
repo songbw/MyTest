@@ -6,4 +6,33 @@ page-list-master {
     border-color: #b2b2b2;
   }
 
+  .scroll-content {
+    //overflow: hidden;
+    overflow-y: hidden !important;
+  }
+
+  ion-list {
+    overflow-y: auto;
+    max-height: 72vh;
+  }
+
+  .tabs-col {
+    background-color: #b2b2b2;
+  }
+
+  .active-tab {
+    background-color: #2ec95c;
+  }
+
+  .nav-blur{
+    color:#252525;
+    border-right:1px solid #e0e0e0;
+    background-color:#f3f4f6;
+  }
+  .nav-current{
+    color:red;
+    border-right:1px solid #fff;
+    background-color:#fff;
+  }
+
 }
