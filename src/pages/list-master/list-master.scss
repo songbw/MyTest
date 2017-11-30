@@ -5,16 +5,34 @@ page-list-master {
     border-width: 1px;
     border-color: #b2b2b2;
   }
-
-  .scroll-content {
-    //overflow: hidden;
-    overflow-y: hidden !important;
+  #indexs-bar {
+    //width: 33%;
+    text-align: center;
+    float: left;
+    position: fixed;
+    left: 0;
+    z-index: 101;
+    background-color: #eee;
+    height: 100%;
+    .index-bar {
+      //margin: 1px 0;
+      //line-height: 20px;
+    }
   }
 
-  ion-list {
-    overflow-y: auto;
-    max-height: 72vh;
+  #second-content {
+    position: fixed;
+    right: 0;
   }
+  //.scroll-content {
+  //  //overflow: hidden;
+  //  overflow-y: hidden !important;
+  //}
+
+  //ion-list {
+  //  overflow-y: auto;
+  //  max-height: 100%;
+  //}
 
   .tabs-col {
     background-color: #b2b2b2;

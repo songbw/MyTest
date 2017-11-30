@@ -14,192 +14,32 @@
 
 <ion-content>
   <ion-row no-padding>
-    <ion-col col-3 no-padding text-center>
+    <ion-col col-3 id="indexs-bar" no-padding>
       <ion-list>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]"  (click)="goToSlide(0)">人气商家</ion-col>
+        <ion-row *ngFor="let item of categoryData, let i = index" (click)="categoryLeftClick(i);">
+          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" class="index-bar">{{item.name}}</ion-col>
         </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(0)">人气商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" (click)="goToSlide(1)">推荐商家</ion-col>
-        </ion-row>
-
       </ion-list>
     </ion-col>
-    <ion-col col-9>
-
+    <ion-col col-9 id="second-content">
       <ion-list>
-
-        <h1>Slide 1</h1>
-        <ion-row>
-          <ion-col col-4>
-            <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f1eb4365c94d7ee42911cae41ba03ff9.jpg">
-            <span>生活配送</span>
-          </ion-col>
-          <ion-col col-4>
-            <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/f1eb4365c94d7ee42911cae41ba03ff9.jpg">
-            <span>空气净化治理</span>
-          </ion-col>
-          <ion-col col-4>
-            <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/5fdb29387f37cdbb32a01912febf0ce8.jpg">
-            <span>生活配送</span>
-          </ion-col>
-          <ion-col col-4>
-            <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/5fdb29387f37cdbb32a01912febf0ce8.jpg">
-            <span>空气净化治理</span>
-          </ion-col>
-          <ion-col col-4>
-            <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/5fdb29387f37cdbb32a01912febf0ce8.jpg">
-            <span>空气净化治理</span>
-          </ion-col>
-        </ion-row>
-        <h1>Slide 2</h1>
-        <ion-row>
-          <ion-col col-4>
-            <button ion-item no-lines detail-none no-margin>
-              <ion-thumbnail>
-                <ion-img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/3f7c25230903129c59ab234b57c3e05f.jpg"></ion-img>
-              </ion-thumbnail>
-              <h3>生活配送</h3>
-            </button>
-          </ion-col>
-          <ion-col col-4>
-            <ion-item no-lines text-center>
-              <ion-thumbnail>
-                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/08f008c0bbf00a170643223eb5b7d3f5.jpg">
-              </ion-thumbnail>
-              <h2>test</h2>
-            </ion-item>
-          </ion-col>
-          <ion-col col-4>
-            <ion-item no-lines text-center>
-              <ion-thumbnail>
-                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/9d20f302d8342922c1f3886010845dce.jpg">
-              </ion-thumbnail>
-              <h2>test</h2>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col col-4>
-            <button ion-item no-lines detail-none no-margin>
-              <ion-thumbnail>
-                <ion-img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/3f7c25230903129c59ab234b57c3e05f.jpg"></ion-img>
-              </ion-thumbnail>
-              <h3>生活配送</h3>
-            </button>
-          </ion-col>
-          <ion-col col-4>
-            <ion-item no-lines text-center>
-              <ion-thumbnail>
-                <img src="http://xiquedaojia.b0.upaiyun.com/xiquedaojia_web_server/08f008c0bbf00a170643223eb5b7d3f5.jpg">
-              </ion-thumbnail>
-              <h2>家庭清洁套餐</h2>
-            </ion-item>
-          </ion-col>
-        </ion-row>
+        <!--<ion-item *ngFor="let item of categoryDetailData, let i = index" no-lines>-->
+          <div *ngFor="let item of categoryDetailData, let i = index" #secondGroup>
+          <h4>{{item.firstName}}</h4>
+          <ion-row>
+            <ion-col col-4 *ngFor="let sed of item.second, let s = index" no-padding>
+              <ion-row>
+                <ion-col col-12 no-padding>
+                  <img src="{{sed.pic}}">
+                </ion-col>
+                <ion-col text-center col-12 no-padding>
+                  {{sed.name}}
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          </div>
+        <!--</ion-item>-->
       </ion-list>
     </ion-col>
   </ion-row>

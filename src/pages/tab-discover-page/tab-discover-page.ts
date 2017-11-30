@@ -149,13 +149,13 @@ export class TabDiscoverPage {
     return [
       {
         name: "上门保洁",
-        typeNumber: '102'
-        ,isSelect:true
+        typeNumber: '102',
+        isSelect:true
       },
       {
         name: "特价专栏",
-        typeNumber: '103'
-        ,isSelect:false
+        typeNumber: '103',
+        isSelect:false
       },
       {
         name: "监控治理",
