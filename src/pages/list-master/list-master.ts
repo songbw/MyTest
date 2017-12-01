@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, ViewChildren} from '@angular/core';
 import {Content, IonicPage,  ModalController, NavController} from 'ionic-angular';
 
 import { Item } from '../../models/item';
@@ -12,7 +12,7 @@ import { Items } from '../../providers/providers';
 export class ListMasterPage {
 
   @ViewChild(Content) content: Content;
-  @ViewChild('secondGroup') secondGroup;
+  @ViewChildren('secondGroup') secondGroup;
 
   currentItems: Item[];
   public categoryData= [];
@@ -21,7 +21,7 @@ export class ListMasterPage {
   index:number = 0;
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
-    this.currentItems = this.items.query();
+    // this.currentItems = this.items.query();
   }
 
   /**
@@ -30,33 +30,6 @@ export class ListMasterPage {
   ionViewDidLoad() {
     this.categoryData = this.getCategoryData();
     this.getCategoryDetailData(102);
-    var $this = this;
-    function alphabetMove(e, move) {
-      var pPositionY = e.changedTouches[0].clientY;
-      var currentItem, targetItem;
-      var d = document;
-      currentItem = d.elementFromPoint(d.body.clientWidth - 1, pPositionY);
-      if (!currentItem || currentItem.className.indexOf('index-bar') < 0) return;
-      targetItem = document.getElementById(currentItem.innerText);
-      document.getElementById('indexs-title').style.display = 'block';
-      document.getElementById('indexs-title').innerText = currentItem.innerText;
-      if (move) {
-        // var index = $this.indexes.join('').indexOf(currentItem.innerText);
-        // $this.content.scrollTo(0, $this.secondGroup._results[index].nativeElement.offsetTop, 300);
-      }
-    }
-    var indexsBar = document.getElementById('indexs-bar');
-    indexsBar.addEventListener('touchstart', function (e) {
-      alphabetMove(e, false);
-    });
-    indexsBar.addEventListener('touchmove', e => {
-      alphabetMove(e, false);
-    });
-    indexsBar.addEventListener('touchend', function (e) {
-      alphabetMove(e, true);
-      document.getElementById('indexs-title').style.display = 'none';
-    });
-
   }
 
   categoryLeftClick=function(index: number){
@@ -66,7 +39,8 @@ export class ListMasterPage {
     let data= this.categoryData[index];
     data.isSelect=true;
     this.select=index;
-    this.content.scrollTo(0,);
+    var se = this.secondGroup;
+    this.content.scrollTo(0, this.secondGroup._results[index].nativeElement.offsetTop, 300);
   };
 
   private getCategoryDetailData(typeNumber: number) {
